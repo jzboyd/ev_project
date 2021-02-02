@@ -1,0 +1,326 @@
+  [1m[35m (196.4ms)[0m  [1m[35mCREATE DATABASE "ev_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (65.2ms)[0m  [1m[35mCREATE DATABASE "ev_project_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-01-31 18:27:05 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.5ms | Allocations: 402)
+Completed 200 OK in 40ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 3430)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-01-31 18:27:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-01-31 23:25:32 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 294)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2277)
+
+
+Started GET "/" for ::1 at 2021-02-01 19:26:30 -0600
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.0) lib/puma/configuration.rb:247:in `call'
+puma (5.2.0) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.0) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.0) lib/puma/server.rb:432:in `process_client'
+puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-01 19:32:55 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 183)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+Started GET "/ev" for ::1 at 2021-02-01 19:33:07 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+  
+SyntaxError (/Users/joelzisholtz/Desktop/Projects/ev_project/app/models/ev.rb:17: syntax error, unexpected '.'
+    def.self.find(id)
+       ^
+/Users/joelzisholtz/Desktop/Projects/ev_project/app/models/ev.rb:27: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+):
+  
+app/models/ev.rb:17: syntax error, unexpected '.'
+app/models/ev.rb:27: syntax error, unexpected `end', expecting end-of-input
+app/models/ev.rb:17: syntax error, unexpected '.'
+app/models/ev.rb:27: syntax error, unexpected `end', expecting end-of-input
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 19:52:19 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 573)
+
+
+  
+SyntaxError (/Users/joelzisholtz/Desktop/Projects/ev_project/app/models/ev.rb:70: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/ev.rb:70: syntax error, unexpected `end', expecting end-of-input
+app/models/ev.rb:70: syntax error, unexpected `end', expecting end-of-input
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 19:52:33 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 9ms (Allocations: 499)
+
+
+  
+Zeitwerk::NameError (expected file /Users/joelzisholtz/Desktop/Projects/ev_project/app/models/ev.rb to define constant Ev, but didn't):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 20:09:45 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 1733)
+
+
+  
+NameError (uninitialized constant EvController::Ev):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2021-02-01 20:59:59 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.8ms | Allocations: 180)
+Completed 200 OK in 15ms (Views: 11.9ms | Allocations: 717)
+
+
+Started GET "/ev" for ::1 at 2021-02-01 21:02:35 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 570)
+
+
+  
+SyntaxError (/Users/joelzisholtz/Desktop/Projects/ev_project/app/models/ev.rb:70: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/models/ev.rb:70: syntax error, unexpected end-of-input, expecting `end'
+app/models/ev.rb:70: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 21:03:16 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 10ms (Allocations: 1363)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:24:12 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 956)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:26:27 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 956)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2021-02-01 22:27:17 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joelzisholtz/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 231)
+
+
+Started GET "/ev" for ::1 at 2021-02-01 22:27:20 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 956)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:09 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 965)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:09 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:13 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 965)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:14 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:14 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:14 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 22:55:28 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 956)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:04:29 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:15:30 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 965)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:18:17 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:19:51 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 955)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:22:29 -0600
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/ev_controller.rb:2:in `<class:EvController>'
+app/controllers/ev_controller.rb:1:in `<main>'
+Started GET "/ev" for ::1 at 2021-02-01 23:25:28 -0600
+Processing by EvController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 965)
+
+
+  
+NoMethodError (undefined method `all' for Ev:Class):
+  
+app/controllers/ev_controller.rb:3:in `index'
+Started GET "/ev" for ::1 at 2021-02-01 23:26:04 -0600
+Processing by EvController#index as HTML
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2423)
+
+
+Started GET "/seed" for ::1 at 2021-02-01 23:28:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/seed"):
+  
+Started GET "/seeds" for ::1 at 2021-02-01 23:28:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/seeds"):
+  
+Started GET "/ev" for ::1 at 2021-02-01 23:28:35 -0600
+Processing by EvController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/ev" for ::1 at 2021-02-01 23:56:26 -0600
+Processing by EvController#index as HTML
+Completed 200 OK in 4ms (Views: 1.4ms | Allocations: 161)
+
+

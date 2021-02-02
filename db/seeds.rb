@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Ev.create ([
+
+{ make: 'BMW', body_style: 'coupe', model: 'i8', trim_level: 'Roadster', year: 2021 },
+{ make: 'Audi', body_style: 'SUV', model: 'e-tron', trim_level: 'Sportback', year: 2021 },
+{ make: 'Tesla', body_style: 'SUV', model: 'Model X', trim_level: 'Plaid', year: 2021 },
+
+])
